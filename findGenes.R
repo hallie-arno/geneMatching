@@ -16,11 +16,11 @@ findGenes <- function(snpsDf, pos = "POS", chrom = "CHROM", ID = "ID", species) 
   ### Load species genes (downloaded from NCBI and ensembl)
   ### If there are files not fiound errors, manually adjust filepaths here
   if (species == "trout") {
-    ensGenes <- fread(paste0(this.dir(), "/SalTrutta.genes.ensembl.csv"))
-    ncbiGenes <- fread(paste0(this.dir(), "/SalTrutta.genes.symbol.csv"))
+    ensGenes <- fread(paste0(this.dir(), "/genes/SalTrutta.genes.ensembl.csv"))
+    ncbiGenes <- fread(paste0(this.dir(), "/genes/SalTrutta.genes.symbol.csv"))
   } else if (species == "salmon") {
-    ensGenes <- fread(paste0(this.dir(), ("/SalSalar.genes.ensembl.csv")))
-    ncbiGenes <- fread(paste0(this.dir(), ("/SalSalar.genes.symbol.csv")))
+    ensGenes <- fread(paste0(this.dir(), ("/genes/SalSalar.genes.ensembl.csv")))
+    ncbiGenes <- fread(paste0(this.dir(), ("/genes/SalSalar.genes.symbol.csv")))
   } else {
     print("species must be 'salmon' for Salmo salar or 'trout' for Salmo trutta.")
   } 
