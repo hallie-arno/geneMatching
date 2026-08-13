@@ -1,11 +1,10 @@
-# Find Genes Documentation/ Tutorial
-Hallie Arno
+
 
 This function replaces bedtools intersect for finding which genes SNPs
-are in for Atlantic salmon and Brown trout. It uses .csv files of the
-position (start and end) of each gene. It then merges the input SNP
-dataframe with the list of all genes, to return which genes contain the
-SNPs of interest.
+are in for Atlantic salmon and Brown trout and is used directly in R. 
+It uses .csv files of the position (start and end) of each gene. It then merges 
+the input SNP dataframe with the list of all genes, to return which genes 
+contain the SNPs of interest.
 
 Below is an example ofhow to use the function.
 
